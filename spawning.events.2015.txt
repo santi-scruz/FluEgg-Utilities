@@ -1,0 +1,11 @@
+Spwaning events in Sadunsky River (OH) by Holly Embke	
+Sourcefile: 	X:\Data\Furnished Data\Egg Sampling\Time of gc egg release_2015.xlsx
+Sample	Spawning time
+1	6/18/2015 8:00
+2	6/29/2015 6:03
+3	7/1/2015 11:51
+4	7/13/2015 9:59
+5	7/14/2015 3:36
+6	7/14/2015 6:50
+7	7/14/2015 5:33
+8	7/14/2015 5:33
