@@ -1,4 +1,4 @@
-Spwaning events in Sadunsky River (OH) by Holly Embke		
+Spawning events in Sadunsky River (OH) by Holly Embke		
 Sourcefile: 	X:\Data\Furnished Data\Egg Sampling\Time of gc egg release_2015.xlsx	
 Sample	Spawning time	Discharge at Freemont (cms)
 1	6/18/2015 8:00	365.57
