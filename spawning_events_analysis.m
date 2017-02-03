@@ -28,7 +28,7 @@ fclose(fid);
 
 %Date formatting
 date_time = dss.data{1,2};
-T =5000;
+T =4000;
 for i = 1:T
     %date = cellfun(@(x) strsplit(x,','), date_time);
     dt = strsplit(date_time{i},',');
@@ -44,7 +44,11 @@ dummy = find((diff(highflow_indx) > 1));
 highflow.event.start = dats([highflow_indx(1); 
                         highflow_indx(dummy(1:(end - 1)) + 1)]);
 highflow.event.end   = dats(highflow_indx(dummy));
-datestr(highflow.event.end(1))
 
-
+%% Plotting
+figure
+plot(dats, precip(1:T))
+hold on
+plot(highflow.event.end, precip(highflow_indx(dummy)),'or')
+plot(highflow.event.start, ones(length(highflow.event.start))*highflow.threshold,'xr')
 
