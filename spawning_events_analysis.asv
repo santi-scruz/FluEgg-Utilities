@@ -13,14 +13,14 @@ values  = data.sample{3};
 
 % Find lowest discharge from spawning events
 indx = find(values == min(values));
-highflow.threshold = values(indx);    % Lowest discharge at Fremont
+minQ = values(indx);    % Lowest discharge at Fremont
 time_minQ = time{indx}; % Time of lowest discharge
 
 %% Open multiannual timeseries
 fid        = fopen('Fremont.FLOWS.2011.2015.txt');
 dss.path   = textscan(fid, '%s', 1, 'Delimiter', '\n');
 dss.header  = textscan(fid, '%s', 3, 'Delimiter', '\t');
-textscan(fid,'%*s \n');
+textscan(fid,'%*s \n')
 dss.units  = textscan(fid, '%*s %*s %s', 1, 'Delimiter', '\t');
 dss.type   = textscan(fid, '%*s %*s %s', 1, 'Delimiter', '\t');
 dss.data   = textscan(fid, '%f %s %f','Delimiter', '\t');
@@ -39,12 +39,15 @@ end
 precip = dss.data{1,3};
 
 % Detect highflow evets
-highflow_indx = find(precip(1:T) >= highflow.threshold);
+highflow_indx = find(precip(1:T) > minQ);
 dummy = find((diff(highflow_indx) > 1));
-highflow.event.start = dats([highflow_indx(1); 
-                        highflow_indx(dummy(1:(end - 1)) + 1)]);
-highflow.event.end   = dats(highflow_indx(dummy));
-datestr(highflow.event.end(1))
+highflow.threshold = minQ;
+highflow.event.start = [highflow_indx(1); 
+                        highflow_indx(dummy(1:(end - 1)) + 1)];
+highflow.event.end   = highflow_indx(dummy);
+
+
+
 
 
 
