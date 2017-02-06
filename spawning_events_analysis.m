@@ -42,13 +42,14 @@ precip = dss.data{1,3};
 highflow_indx = find(precip(1:T) >= highflow.threshold);
 dummy = find((diff(highflow_indx) > 1));
 highflow.event.start = dats([highflow_indx(1); 
-                        highflow_indx(dummy(1:(end - 1)) + 1)]);
-highflow.event.end   = dats(highflow_indx(dummy));
+                        highflow_indx(dummy + 1)]);
+highflow.event.end   = dats([highflow_indx(dummy); 
+                             highflow_indx(end)]);
 
 %% Plotting
 figure
 plot(dats, precip(1:T))
 hold on
-plot(highflow.event.end, precip(highflow_indx(dummy)),'or')
-plot(highflow.event.start, ones(length(highflow.event.start))*highflow.threshold,'xr')
+plot(highflow.event.end, precip([highflow_indx(dummy); highflow_indx(end)]),'or')
+plot(highflow.event.start, precip([highflow_indx(1); highflow_indx(dummy)]),'xr')
 
