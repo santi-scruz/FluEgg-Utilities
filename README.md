@@ -7,6 +7,16 @@ At the top of the file there should be a short introduction and/ or overview tha
 
 ## Code Example
 
+### Exporting DSS data
+Open HEC-DSSVue
+Open DSS file and select a path to data (ex.: /STATION/TYPE/VARIABLE/TIME WINDOW/FREQUENCY/NOTE)
+Menu Bar > Display > Tabulate
+File > Export
+(y) Fixed Width Columns
+(y) Include Column headers
+(y) Print Title
+Save as text file
+
 Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
 ## Motivation
