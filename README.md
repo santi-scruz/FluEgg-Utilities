@@ -31,15 +31,15 @@ Open HEC-DSSVue
 
 Open DSS file and select a path to data (ex.: /STATION/TYPE/VARIABLE/TIME WINDOW/FREQUENCY/NOTE)
 
-*Menu Bar > Display > Tabulate*
+*Menu Bar* > *Display* > *Tabulate*
 
-*File > Export* (Check the following options)
+*File* > *Export* (Check the following options)
 
 * Fixed Width Columns
 * Include Column headers
 * Print Title
 
-*Save as: **<filename.txt>***(Save as text file)
+*Save as*: **filename.txt** (Save as text file)
 
 Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
