@@ -77,8 +77,6 @@ datetick('x',12)
 ylabel('Flow (cms)')
 grid off
 
-figure
-
 %% Export to Table
 id = (1:length( highflow.event.maxValue))';
 t = table(id, ...
@@ -90,4 +88,4 @@ t = table(id, ...
           highflow.event.descendtime);
 t.Properties.VariableNames = {'id' 'Start' 'End' 'PeakTime' ...
     'PeakFlow_cms' 'RiseTime_min' 'DescendTime_min'};
-writetable(t,'Summary.txt','Delimiter','\t')
+writetable(t,'Summary2.txt','Delimiter','\t')
