@@ -66,8 +66,25 @@ Open DSS file and select a path to data (ex.: /STATION/TYPE/VARIABLE/TIME WINDOW
 
 ## Contributors
 
-[//]: # (Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.)
+We suggest you the following workflow when proposing changes to this repository
+
+1. [Fork this project][fork] to your account.
+2. [Create a branch][branch] for the change you intend to make.
+3. Make your changes to your fork.
+4. [Send a pull request][pr] from your fork’s branch to our `master` branch.
+
+Using the web-based interface to make changes is fine too, and will help you
+by automatically forking the project and prompting to send a pull request too.
+
+[fork]: https://help.github.com/articles/fork-a-repo/
+[branch]: https://help.github.com/articles/creating-and-deleting-branches-within-your-repository
+[pr]: https://help.github.com/articles/using-pull-requests/
 
 ## License
+Copyright 2017 Santiago Sanatcruz
 
-[//]: # (A short snippet describing the license (MIT, Apache, etc.))
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
